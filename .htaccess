@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /dashboard_eventos/
+
+# Redirigir todo a public/ si no es una petición a archivos existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
